@@ -38,6 +38,18 @@ header {
   color: white;
 }
 
+/*@media only screen and (min-width:500px) {
+	header {
+	  padding: 2em;
+	  text-align: center;
+	  background-image: url('./img/back.jpg');
+	  background-size: 100% 100%;
+	  background-repeat: no-repeat;
+	  background-position: initial;
+	  color: white;
+	}
+}*/
+
 header section {
   margin: 0 auto;
   max-width: 640px;
