@@ -32,9 +32,9 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-  background-image: url('./img/bg.jpg');
+  background-image: url('./img/back.png');
   background-size: cover;
-  background-position: fixed;
+  background-position: initial;
   color: white;
 }
 
