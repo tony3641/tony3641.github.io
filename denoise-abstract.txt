@@ -1,0 +1,17 @@
+Denoising E-Textile Sensors for Real-World Kinematics Monitoring
+
+Yuxuan Han(1), Vigyanshu Mishra(1), and Asimina Kiourti(1)
+(1) ElectroScience Laboratory, Dept. of Electrical and Computer Engineering, The Ohio State University, Columbus, OH 43212, https://electroscience.osu.edu/ 
+
+A wearable textile-based sensor that consists of transmit and receive loops can be used to measure flexion angle. This can fulfill the needs of measuring flexion angle of joints such as knee, elbow, and wrist for humans, or even animals. 
+We are building a wearable textile-based sensor that consists of transmit and receive loops located above and below the joint to accurately monitor joint kinematics The sensor works accurately in its current form, but it is not integrated 
+on fabrics. Once integrated on fabrics, the transmit and receive loops will drift along with fabric movement and hence will impair the working of the sensor itself. The goal of this project is to model and remove such noise associated with 
+e-textile sensors being deformed upon the fabric (namely, e-textile noise), with a focus on kinematics monitoring applications.
+
+Two configurations were studied to analyze the pattern of fabric drifting noise: setup with loops on top of sleeve and setup without sleeve as the control group. The transmission coefficient (|S21|) (measure of received power from the transmitter) 
+of the loop pair at different flexion angles was measured using the network analyzer. At the same time, the flexion angle ranging from 0 to 180 was recorded using the camera with the computer vision program.
+
+Measurements indicated that two factors contribute to the overall noise. The first factor is the varying distance between loops for each measurement. The second factor is uneven stretching on the fabric sleeve surface alone with joint flexion.
+By determining the transmission coefficient at a fixed initial position, the varying distance between two loops can be identified and hence calibrated. The transmission coefficient VS flexion angle model without considering uneven fabric stretching 
+can be quantified. Then, machine learning algorithm can be used as a non-linear regulator to offset uneven fabric stretching noise generated alone with joint flexion. Therefore, a calibrated and denoised transmission coefficient VS flexion angle model 
+for a specific setup can be quantified. During the kinematic measurement, the real-time flexion angle can be calculated based on the calibrated and denoised transmission coefficient VS flexion angle model.
